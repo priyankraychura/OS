@@ -1,0 +1,8 @@
+echo -n "Enter value: "
+read fa
+fact=1
+for(( i=1; i<=fa; i++))
+do
+fact=`expr $fact \* $i`
+done
+echo "Factorial value is: " $fact

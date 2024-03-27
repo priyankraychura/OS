@@ -1,0 +1,7 @@
+n=0
+bin=0
+echo "Decimal to Binary Converter"
+echo -n "Enter decimal number: "
+read n
+bin=`echo "obase=2;ibase=10;$n" | bc`
+echo "$n is equivalent to \"$bin\" in binary

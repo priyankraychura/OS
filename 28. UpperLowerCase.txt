@@ -1,0 +1,7 @@
+echo -n "Enter character: "
+read ch
+case $ch in
+[A-Z]) echo "Upper case";;
+[a-z]) echo "Lower case";;
+*) echo "Invalid key";;
+esac

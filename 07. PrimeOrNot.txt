@@ -1,0 +1,19 @@
+echo -n "Enter n: "
+read n
+for(( i=2; i<n; i++ ))
+do
+    if [ `expr $n % $i` = 0 ]
+    then
+        ch=1
+        break
+    else
+        ch=0
+    fi
+done
+
+if [ $ch = 1 ]
+then
+    echo "Composite"
+else
+    echo "Prime"
+fi

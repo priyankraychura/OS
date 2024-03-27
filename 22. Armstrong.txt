@@ -1,0 +1,16 @@
+echo -n "Enter val: "
+read a
+t=$a
+while test $a -gt 0
+do
+b=`expr $a % 10`
+c=`expr $c + $b \* $b \* $b`
+a=`expr $a / 10`
+done
+if [ $t = $c ]
+then
+echo "Armstrong"
+else
+echo "Not Armstrong"
+fi
+echo $c

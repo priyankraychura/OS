@@ -1,0 +1,21 @@
+echo "Main menu"
+echo "1) To display calender of current year and month"
+echo "2) To display calender of current date in dd/mm/yy"
+echo "3) To display current time"
+echo "4) Exit"
+echo -n "Enter your choice: "
+read ch
+
+case $ch in
+    1) echo -n "Enter current month: "
+        read mon
+        echo -n "Enter current year: "
+        read yy
+        cal $mon $yy;;
+    2) echo -n "Date: "
+        date "+%C %B %Y";;
+    3) echo -n "Time: "
+        date +%T;;
+    4) exit;;
+    *) echo "Invalid choice"
+esac

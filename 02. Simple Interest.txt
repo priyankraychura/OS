@@ -1,0 +1,8 @@
+echo "Enter principle: "
+read p
+echo "Enter reate(R): "
+read r
+echo "Enter no. of month: "
+read n
+$si = $(( p*r*n ))/100
+echo "SI: " $si

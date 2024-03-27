@@ -1,0 +1,9 @@
+echo -n "Enter no.: "
+read a
+while test $a -gt 0
+do
+b=`expr $a % 10`
+c=`expr $c + $b`
+a=`expr $a / 10`
+done
+echo "Sum is: "$c

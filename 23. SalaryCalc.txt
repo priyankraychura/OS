@@ -1,0 +1,17 @@
+echo -n "Enter sal: "
+read sal
+echo -n "Enter DA: "
+read da
+echo -n "Enter HRA: "
+read hra
+echo -n "Enter PF: "
+read pf
+DA=$(( sal * da / 100 ))
+HRA=$(( sal * hra / 100 ))
+PF=$(( sal * pf / 100 ))
+tot_sal=`expr $sal + $DA + $HRA - $PF`
+echo "Salary is: " $sal
+echo "DA is: " $DA
+echo "HRA is: " $HRA
+echo "PF is: " $PF
+echo "Totall salary is: " $tot_sal

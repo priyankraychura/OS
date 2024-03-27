@@ -1,0 +1,17 @@
+for(( i=1; i<=5; i++ ))
+do
+printf "\n"
+for(( j=1; j<=i; j++ ))
+do
+echo -n "*"
+done
+done
+for(( i=4; i>=1; i-- ))
+do
+printf "\n"
+for(( j=i; j>=1; j-- ))
+do
+echo -n "*"
+done
+done
+printf "\n"

@@ -1,0 +1,13 @@
+echo -n "Enter val: "
+read n
+if [ $n -ge 0 ]
+then
+    if [ $n = 0 ]
+    then
+        echo "Zero"
+    else
+        echo "Positive"
+    fi
+else
+    echo "Negative"
+fi

@@ -1,0 +1,9 @@
+echo -n "Enter no.: "
+read n
+for(( i=1; i<=10; i++))
+do
+m=`expr $i \* $n`
+echo $n " X " $i " = " $m
+tot=`expr $tot + $m`
+done
+echo "Total: " $tot

@@ -1,0 +1,15 @@
+echo -n "Enter no. 1: "
+read a
+echo -n "Enter no. 2: "
+read b
+add=$(( a+b ))
+sub=$(( a-b ))
+mul=$(( a*b ))
+div=$(( a/b ))
+mod=$(( a%b ))
+
+echo "Add is: " $add
+echo "Sub is: " $sub
+echo "Mul is: " $mul
+echo "Div is: " $div
+echo "Mod is: " $mod

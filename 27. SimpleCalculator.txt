@@ -1,0 +1,13 @@
+echo -n "Enter 2 values: "
+read a
+read b
+echo -n "Enter what you want? (+, -, x, /): "
+read op
+echo $op
+case $op in
++) echo "$a + $b = " `expr $a + $b`;;
+-) echo "$a - $b = " `expr $a - $b`;;
+x) echo "$a x $b = " `expr $a \* $b`;;
+/) echo "$a / $b = " `expr $a / $b`;;
+*) echo "Invalid choice";;
+esac

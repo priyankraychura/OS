@@ -1,0 +1,9 @@
+echo -n "Enter no.: "
+read t
+rev=0
+while test $t -gt 0
+do
+rev=`expr $rev \* 10 + $t % 10`
+t=`expr $t / 10`
+done
+echo "Reverse no. is: " $rev

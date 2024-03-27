@@ -1,0 +1,13 @@
+echo -n "Enter name of file: "
+read name
+>>file1
+echo -n "File name is: "
+echo $name
+echo -n "Number of lines in file are: " >>file1
+cat $name | wc -l>>file1
+echo -n "Number of words in file are: " >>file1
+cat $name | wc -w>>file1
+echo -n "Number of character in file are:" >>file1
+cat $name | wc -c>>file1
+cat file1
+rm file1

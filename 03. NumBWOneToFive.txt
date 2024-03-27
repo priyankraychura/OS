@@ -1,0 +1,8 @@
+echo "Enter value between 1 -5: "
+read a
+if [ $a -ge 1 -a $a -le 5 ]
+then
+echo "Valid num"
+else
+echo "Invalid num"
+fi
